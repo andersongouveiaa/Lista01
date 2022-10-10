@@ -1,35 +1,25 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
-package br.edu.uniaeso.l1q01;
-
-/**
- *
- * @author mathe
- */
 public class Calculadora {
 
-    private double n1, n2;
-    private String op;
+    private double num1, num2;
+    private String operacao;
 
     public Calculadora() {
     }
 
     public double calcular() {
         double result = 0;
-        switch (op) {
+        switch (operacao) {
             case "+":
-                result = getN1() + getN2();
+                result = getNum1() + getNum2();
                 break;
             case "-":
-                result = getN1() - getN2();
+                result = getNum1() - getNum2();
                 break;
             case "/":
-                result = getN1() / getN2();
+                result = getNum1() / getNum2();
                 break;
             case "*":
-                result = getN1() * getN2();
+                result = getNum1() * getNum2();
                 break;
             default:
 
@@ -37,28 +27,28 @@ public class Calculadora {
         return result;
     }
 
-    public double getN1() {
+    public double getNum1() {
         return n1;
     }
 
-    public void setN1(double n1) {
-        this.n1 = n1;
+    public void setNum1(double num1) {
+        this.num1 = num1;
     }
 
-    public double getN2() {
-        return n2;
+    public double getNum2() {
+        return num2;
     }
 
-    public void setN2(double n2) {
-        this.n2 = n2;
+    public void setNum2(double num2) {
+        this.num2 = num2;
     }
 
-    public String getOp() {
-        return op;
+    public String getOperacao() {
+        return operacao;
     }
 
-    public void setOp(String op) {
-        this.op = op;
+    public void setOperacao(String operacao) {
+        this.operacao = operacao;
     }
 
 }

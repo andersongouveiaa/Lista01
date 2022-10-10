@@ -28,7 +28,7 @@ public class Calculadora {
     }
 
     public double getNum1() {
-        return n1;
+        return num1;
     }
 
     public void setNum1(double num1) {
